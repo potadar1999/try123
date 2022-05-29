@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+</body>
+</html>
+<script>
+    let amar={
+    propestion:"singer",
+    lives:"Goa",
+
+    work:function(){
+    console.log(this.propestion)
+},
+}
+
+let akbar={
+     propestion:"chef",
+    lives:"Mumbai",
+
+    work:function(){
+    console.log(this.propestion)
+},
+}
+
+let anthony={
+     propestion:"Magician",
+    lives:"Kashmir",
+
+    work:function(){
+    console.log(this.propestion)
+},
+}
+
+
+
+
+amar.work.call(akbar)
+amar.work.call(anthony)
+akbar.work.call(amar)
+akbar.work.call(anthony)
+anthony.work.call(amar)
+anthony.work.call(akbar)
+</script>
